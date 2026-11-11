@@ -23,3 +23,9 @@ uv run pytest
 
 Each case study is its own package under `case-studies/`, with its own
 dependencies, tests and write-up.
+
+## License
+
+Code and writing are released under the [MIT License](LICENSE). Data extracts
+come from USDA and Iowa State University Extension publications; each case
+study's sources file lists them.

@@ -132,8 +132,6 @@ This is the unbuilt part, and how I would approach it.
 
 ## How I worked
 
-<!-- TODO(Tanner): confirm and rewrite this section in your own words. -->
-
 I built this with AI coding agents (Claude Code and Codex) doing most of the
 typing. The calls below were mine:
 

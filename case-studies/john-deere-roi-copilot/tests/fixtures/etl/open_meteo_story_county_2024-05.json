@@ -1,0 +1,36 @@
+{
+  "latitude": 42.003513,
+  "longitude": -93.40613,
+  "utc_offset_seconds": -18000,
+  "timezone": "America/Chicago",
+  "timezone_abbreviation": "GMT-5",
+  "elevation": 301.0,
+  "daily_units": {
+    "time": "iso8601",
+    "temperature_2m_max": "\u00b0F",
+    "temperature_2m_min": "\u00b0F",
+    "precipitation_sum": "inch"
+  },
+  "daily": {
+    "time": [
+      "2024-05-01",
+      "2024-05-02",
+      "2024-05-03"
+    ],
+    "temperature_2m_max": [
+      64.9,
+      66.3,
+      69.9
+    ],
+    "temperature_2m_min": [
+      46.0,
+      51.3,
+      44.0
+    ],
+    "precipitation_sum": [
+      0.059,
+      1.346,
+      0.0
+    ]
+  }
+}

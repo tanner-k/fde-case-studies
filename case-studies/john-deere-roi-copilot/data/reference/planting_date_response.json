@@ -1,0 +1,49 @@
+{
+  "$comment": "Fitted quadratic planting-date yield response for Iowa corn, transcribed from Table 2 of the publication named in `source`. yield = b0 + b1*x + b2*x^2, where x is the transformed day-of-year described in `x_transform`. Coefficients are the paper's own; relative yield and days-after-optimum are computed from them in engine/timeliness.py rather than stored, so nothing here is a derived number. The PDF is NOT archived in this repository: it is a journal article, not an extension publication.",
+  "source": {
+    "citation": "Abendroth, L.J., K.P. Woli, A.J.W. Myers, and R.W. Elmore. 2017. Yield-Based Corn Planting Date Recommendation Windows for Iowa. Crop, Forage & Turfgrass Management 3(1):1-7.",
+    "doi": "10.2134/cftm2017.02.0015",
+    "licence": "CC BY-NC-ND",
+    "retrieved": "2026-08-17",
+    "retrieved_from": "https://pdfs.semanticscholar.org/ea04/240143615041bb7b47188be43d265a13639d.pdf",
+    "publisher_url_note": "Publisher host (acsess.onlinelibrary.wiley.com) returns HTTP 403 to scripted clients; the Semantic Scholar mirror was fetched instead and verified to be the correct paper by its title, author list, and abstract text after extraction.",
+    "table": "Table 2 (coefficients and optimum DOY); Table 3 (98-100% and 95-100% windows, used only to check this transcription in tests, not stored here)",
+    "trial": "18 site-year randomized complete block field trial (3-4 reps) at six Iowa State University Research and Demonstration Farms (2006, 2007, 2009); five planting dates per site-year, target planting dates between 1 April and 1 June (DOY 91-152) in 15-day increments."
+  },
+  "x_transform": "Planting date was transformed to an adjusted DOY by subtracting the date in the middle (DOY 120, i.e. 30 April) of the target planting-date range and dividing by 40: x = (DOY_original - 120) / 40. The paper states this was done 'to allow model convergence and have the intercept be easily interpreted' (Statistical Analysis section). The fitted model is y = b0 + b1*x + b2*x^2, i.e. the quadratic term is x^2, not DOY_original^2.",
+  "curves": [
+    {
+      "crop": "CORN",
+      "region": "NC-NE",
+      "b0": 192,
+      "b1": -30.6,
+      "b2": -49.1,
+      "day_of_year_at_max_published": 108,
+      "valid_day_of_year_range": [91, 152],
+      "source": "Abendroth, Woli, Myers & Elmore (2017), Table 2, site-grouping row 'NC-NE'",
+      "retrieved": "2026-08-17"
+    },
+    {
+      "crop": "CORN",
+      "region": "NW-C",
+      "b0": 178,
+      "b1": -7.4,
+      "b2": -26.7,
+      "day_of_year_at_max_published": 114,
+      "valid_day_of_year_range": [91, 152],
+      "source": "Abendroth, Woli, Myers & Elmore (2017), Table 2, site-grouping row 'NW-C'",
+      "retrieved": "2026-08-17"
+    },
+    {
+      "crop": "CORN",
+      "region": "SW-SE",
+      "b0": 197,
+      "b1": -8.8,
+      "b2": -65.1,
+      "day_of_year_at_max_published": 117,
+      "valid_day_of_year_range": [91, 152],
+      "source": "Abendroth, Woli, Myers & Elmore (2017), Table 2, site-grouping row 'SW-SE'",
+      "retrieved": "2026-08-17"
+    }
+  ]
+}

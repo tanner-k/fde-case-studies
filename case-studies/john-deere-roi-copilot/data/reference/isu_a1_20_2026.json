@@ -1,0 +1,92 @@
+{
+  "$comment": "Herbicide and insecticide line items extracted by hand from ISU Ag Decision Maker A1-20 (FM 1712), 'Estimated Costs of Crop Production in Iowa - 2026', revised January 2026. The PDF is archived alongside this file because extension.iastate.edu serves an Anubis proof-of-work challenge to scripted clients and cannot be re-fetched automatically. Page numbers refer to the archived PDF.",
+  "source": {
+    "id": "isu_a1_20_2026",
+    "title": "Estimated Costs of Crop Production in Iowa - 2026",
+    "publication": "Iowa State University Extension, Ag Decision Maker File A1-20 (FM 1712)",
+    "revised": "2026-01",
+    "retrieved": "2026-08-12",
+    "archived_pdf": "isu-a1-20-2026-estimated-costs-crop-production-iowa.pdf",
+    "access_note": "Manual download only. Scripted access is blocked."
+  },
+  "units": "USD per acre",
+  "nature": "prescriptive budget - the cost of a recommended program at surveyed input prices, NOT a survey of realised grower spending. See assumptions.md section 6 for why this matters.",
+  "wage_rate_usd_per_hour": 20.40,
+  "budgets": [
+    {
+      "crop": "corn",
+      "rotation": "continuous corn",
+      "tillage": "conventional (chisel plow, tandem disk, field cultivate)",
+      "page": 2,
+      "herbicide": 56.00,
+      "insecticide": 25.00,
+      "fungicide": null,
+      "yield_levels_bu_per_acre": [174, 193, 212]
+    },
+    {
+      "crop": "corn",
+      "rotation": "corn following soybeans",
+      "tillage": "conventional",
+      "page": 3,
+      "herbicide": 56.00,
+      "insecticide": null,
+      "fungicide": null,
+      "note": "No insecticide line: rotation breaks corn rootworm pressure. Continuous corn on page 2 carries $25."
+    },
+    {
+      "crop": "soybeans",
+      "rotation": "soybeans following corn",
+      "tillage": "conventional",
+      "trait": "herbicide tolerant",
+      "page": 5,
+      "herbicide": 75.00,
+      "insecticide": null,
+      "fungicide": null,
+      "note": "Footnote 2: estimates exclude any insecticide or fungicide cost."
+    },
+    {
+      "crop": "corn",
+      "rotation": "corn following soybeans",
+      "tillage": "strip-till",
+      "page": 6,
+      "herbicide": 83.00
+    },
+    {
+      "crop": "soybeans",
+      "rotation": "soybeans following corn",
+      "tillage": "strip-till",
+      "trait": "herbicide tolerant",
+      "page": 6,
+      "herbicide": 89.00
+    },
+    {
+      "crop": "soybeans",
+      "rotation": "soybeans following corn",
+      "tillage": "conventional",
+      "trait": "non-herbicide-tolerant",
+      "page": 7,
+      "herbicide_range": [85.00, 89.00]
+    },
+    {
+      "crop": "corn",
+      "rotation": "corn following soybeans",
+      "tillage": "low-till",
+      "page": 8,
+      "herbicide": 83.00
+    },
+    {
+      "crop": "soybeans",
+      "rotation": "soybeans following corn",
+      "tillage": "low-till, drilled",
+      "trait": "herbicide tolerant",
+      "page": 8,
+      "herbicide": 89.00
+    }
+  ],
+  "findings": {
+    "tillage_gradient": "Reduced tillage raises herbicide cost sharply - corn $56 conventional vs $83 strip/low-till (+48%), soybeans $75 vs $89 (+19%). Tillage substitutes for chemical weed control. Directly relevant to See & Spray: reduced-till operations carry both a larger herbicide bill and heavier reliance on residuals.",
+    "vs_ers": "ISU conventional corn herbicide alone ($56.00) exceeds the entire ERS Heartland 2025 `Chemicals` line ($49.23) and is 134% of the ERS-derived herbicide figure ($41.85). For soybeans the gap is larger: $75-89 vs $44.19 derived, i.e. 170-201%.",
+    "unresolved": "This gap decides the project's headline. See assumptions.md section 6 - ISU is prescriptive, ERS is realised survey spending, and both are legitimate. Neither is a defect in the other."
+  },
+  "not_in_this_document": "A1-20 gives a single herbicide total per budget. It does NOT split residual from non-residual, which is what the See & Spray addressable share needs. ISU WC 94 (herbicide guide, per-treatment pricing) is still the document that would convert that estimate into a measurement."
+}

@@ -1,0 +1,50 @@
+{
+  "$comment": "SYNTHETIC. Hand-written to the Quick Stats record shape confirmed against the live API on 2026-08-16 for commodity_desc=CORN, statisticcat_desc=PROGRESS, state_alpha=IA. Field names and value formats are real; the rows are not a captured response.",
+  "data": [
+    {
+      "commodity_desc": "CORN",
+      "statisticcat_desc": "PROGRESS",
+      "short_desc": "CORN - PROGRESS, MEASURED IN PCT PLANTED",
+      "unit_desc": "PCT PLANTED",
+      "agg_level_desc": "STATE",
+      "state_alpha": "IA",
+      "freq_desc": "WEEKLY",
+      "reference_period_desc": "WEEK #16",
+      "week_ending": "2024-04-21",
+      "begin_code": "16",
+      "end_code": "16",
+      "year": "2024",
+      "Value": "12"
+    },
+    {
+      "commodity_desc": "CORN",
+      "statisticcat_desc": "PROGRESS",
+      "short_desc": "CORN - PROGRESS, MEASURED IN PCT PLANTED",
+      "unit_desc": "PCT PLANTED",
+      "agg_level_desc": "STATE",
+      "state_alpha": "IA",
+      "freq_desc": "WEEKLY",
+      "reference_period_desc": "WEEK #17",
+      "week_ending": "2024-04-28",
+      "begin_code": "17",
+      "end_code": "17",
+      "year": "2024",
+      "Value": "59"
+    },
+    {
+      "commodity_desc": "CORN",
+      "statisticcat_desc": "PROGRESS",
+      "short_desc": "CORN - PROGRESS, MEASURED IN PCT PLANTED",
+      "unit_desc": "PCT PLANTED",
+      "agg_level_desc": "STATE",
+      "state_alpha": "IA",
+      "freq_desc": "WEEKLY",
+      "reference_period_desc": "WEEK #18",
+      "week_ending": "2024-05-05",
+      "begin_code": "18",
+      "end_code": "18",
+      "year": "2024",
+      "Value": "86"
+    }
+  ]
+}

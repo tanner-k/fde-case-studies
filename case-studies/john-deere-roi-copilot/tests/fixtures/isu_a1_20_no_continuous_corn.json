@@ -1,0 +1,19 @@
+{
+  "$comment": "SYNTHETIC. Minimal ISU A1-20-shaped budgets list carrying no ('corn', 'continuous corn') row, for test_corn_planting_delay_cost_raises_for_a_missing_budget_row.",
+  "budgets": [
+    {
+      "crop": "corn",
+      "rotation": "corn following soybeans",
+      "tillage": "conventional",
+      "page": 1,
+      "yield_levels_bu_per_acre": null
+    },
+    {
+      "crop": "soybeans",
+      "rotation": "soybeans following corn",
+      "tillage": "conventional",
+      "page": 3,
+      "yield_levels_bu_per_acre": [55, 61, 67]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+case-studies/*/data/raw/
+case-studies/*/deliverables/build/
+.next/
+
+# Two small USDA extracts are force-added (`git add -f`) despite the rule above,
+# so a fresh clone reproduces the published figures and the demo tests:
+#   case-studies/john-deere-roi-copilot/data/raw/nass/crop_progress.parquet
+#   case-studies/john-deere-roi-copilot/data/raw/ers/commodity_budgets.parquet

@@ -1,0 +1,35 @@
+[project]
+name = "fde-portfolio"
+version = "0.1.0"
+description = "Forward Deployed Engineer portfolio — case studies"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+# `requests` is here so tests can import scripts/deere_spike.py, which declares
+# it as a PEP 723 inline dependency for standalone `uv run --script` use.
+dev = ["pytest>=8.0", "ruff>=0.6", "requests>=2.32"]
+
+# Each case study is its own package with its own dependencies. Adding a member
+# here is what keeps case study #2 from inheriting #1's scientific stack.
+[tool.uv.workspace]
+members = ["case-studies/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["case-studies"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+# E/F/W pyflakes+pycodestyle, I import order, N pep8-naming, UP pyupgrade,
+# B bugbear, ANN return annotations, D docstrings, RUF ruff-specific.
+select = ["E", "F", "W", "I", "N", "UP", "B", "ANN201", "D", "RUF"]
+ignore = ["D203", "D213"]  # incompatible with D211/D212, which ruff prefers
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/**" = ["D103", "ANN201"]  # test functions document themselves by name

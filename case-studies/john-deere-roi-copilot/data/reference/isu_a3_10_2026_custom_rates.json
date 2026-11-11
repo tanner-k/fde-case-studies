@@ -1,0 +1,1343 @@
+{
+  "$comment": "2026 Iowa Farm Custom Rate Survey (A3-10, FM 1698, rev. March 2026). 205 respondents, 4,698 rates. Includes fuel, repairs, depreciation, interest and operator labour unless noted; diesel assumed $2.89/gal. `responses` is the count behind each rate and is the market-depth signal: an operation with 100+ providers is one Iowa growers already consolidate.",
+  "source": {
+    "id": "isu_a3_10_2026",
+    "publication": "Iowa State University Extension, Ag Decision Maker A3-10",
+    "revised": "2026-03",
+    "retrieved": "2026-08-13",
+    "archived_pdf": "isu-a3-10-2026-iowa-farm-custom-rate-survey.pdf",
+    "access_note": "Manual download only; scripted access is blocked."
+  },
+  "rates": [
+    {
+      "section": "Tillage",
+      "operation": "Chopping cornstalks / acre",
+      "unit": "acre",
+      "average": 14.55,
+      "median": 15.0,
+      "range_low": 8.0,
+      "range_high": 20.0,
+      "responses": 32
+    },
+    {
+      "section": "Tillage",
+      "operation": "Moldboard plowing / acre",
+      "unit": "acre",
+      "average": 20.1,
+      "median": 21.0,
+      "range_low": 14.0,
+      "range_high": 24.0,
+      "responses": 17
+    },
+    {
+      "section": "Tillage",
+      "operation": "Chisel plowing / acre",
+      "unit": "acre",
+      "average": 20.75,
+      "median": 20.0,
+      "range_low": 10.0,
+      "range_high": 28.0,
+      "responses": 37
+    },
+    {
+      "section": "Tillage",
+      "operation": "Disk/chiseling / acre",
+      "unit": "acre",
+      "average": 23.0,
+      "median": 23.0,
+      "range_low": 10.0,
+      "range_high": 34.0,
+      "responses": 58
+    },
+    {
+      "section": "Tillage",
+      "operation": "Vertical tillage / acre",
+      "unit": "acre",
+      "average": 22.15,
+      "median": 22.0,
+      "range_low": 12.0,
+      "range_high": 30.0,
+      "responses": 79
+    },
+    {
+      "section": "Tillage",
+      "operation": "without fertilizer application / acre",
+      "unit": "acre",
+      "average": 23.2,
+      "median": 23.5,
+      "range_low": 15.0,
+      "range_high": 30.0,
+      "responses": 20
+    },
+    {
+      "section": "Tillage",
+      "operation": "with dry bulk fertilizer, banded, no materials / acre",
+      "unit": "acre",
+      "average": 29.65,
+      "median": 30.0,
+      "range_low": 17.0,
+      "range_high": 40.0,
+      "responses": 21
+    },
+    {
+      "section": "Tillage",
+      "operation": "with liquid fertilizer, knifed, no materials / acre",
+      "unit": "acre",
+      "average": 28.15,
+      "median": 29.0,
+      "range_low": 17.0,
+      "range_high": 39.0,
+      "responses": 16
+    },
+    {
+      "section": "Tillage",
+      "operation": "with anhydrous fertilizer, no materials / acre",
+      "unit": "acre",
+      "average": 28.35,
+      "median": 29.5,
+      "range_low": 17.0,
+      "range_high": 37.0,
+      "responses": 18
+    },
+    {
+      "section": "Tillage",
+      "operation": "Subsoiling (8 to 15 inches deep) / acre",
+      "unit": "acre",
+      "average": 25.2,
+      "median": 25.0,
+      "range_low": 13.0,
+      "range_high": 35.0,
+      "responses": 36
+    },
+    {
+      "section": "Tillage",
+      "operation": "V-ripping (over 15 inches deep) / acre",
+      "unit": "acre",
+      "average": 27.2,
+      "median": 27.25,
+      "range_low": 15.0,
+      "range_high": 40.0,
+      "responses": 28
+    },
+    {
+      "section": "Tillage",
+      "operation": "V-ripping with tandem disk / acre",
+      "unit": "acre",
+      "average": 26.1,
+      "median": 25.3,
+      "range_low": 12.25,
+      "range_high": 40.0,
+      "responses": 48
+    },
+    {
+      "section": "Tillage",
+      "operation": "Disking, tandem / acre",
+      "unit": "acre",
+      "average": 19.8,
+      "median": 20.0,
+      "range_low": 10.0,
+      "range_high": 30.0,
+      "responses": 59
+    },
+    {
+      "section": "Tillage",
+      "operation": "Disking, heavy or offset / acre",
+      "unit": "acre",
+      "average": 23.75,
+      "median": 22.75,
+      "range_low": 16.0,
+      "range_high": 30.0,
+      "responses": 22
+    },
+    {
+      "section": "Tillage",
+      "operation": "Harrowing or dragging / acre",
+      "unit": "acre",
+      "average": 12.8,
+      "median": 12.0,
+      "range_low": 7.0,
+      "range_high": 18.0,
+      "responses": 23
+    },
+    {
+      "section": "Tillage",
+      "operation": "Soil finishing / acre",
+      "unit": "acre",
+      "average": 19.8,
+      "median": 19.5,
+      "range_low": 10.0,
+      "range_high": 33.0,
+      "responses": 52
+    },
+    {
+      "section": "Tillage",
+      "operation": "Field cultivating / acre",
+      "unit": "acre",
+      "average": 19.2,
+      "median": 19.0,
+      "range_low": 7.6,
+      "range_high": 32.0,
+      "responses": 82
+    },
+    {
+      "section": "Tillage",
+      "operation": "Rock picking / acre",
+      "unit": "acre",
+      "average": 18.5,
+      "median": 18.0,
+      "range_low": 10.0,
+      "range_high": 30.0,
+      "responses": 23
+    },
+    {
+      "section": "Tillage",
+      "operation": "Cultivating, conventional / acre",
+      "unit": "acre",
+      "average": 17.45,
+      "median": 18.0,
+      "range_low": 12.0,
+      "range_high": 20.0,
+      "responses": 18
+    },
+    {
+      "section": "Tillage",
+      "operation": "Cultivating, ridge-till / acre",
+      "unit": "acre",
+      "average": 17.35,
+      "median": 17.0,
+      "range_low": 15.0,
+      "range_high": 18.75,
+      "responses": 8
+    },
+    {
+      "section": "Tillage",
+      "operation": "Rotary hoeing / acre",
+      "unit": "acre",
+      "average": 12.85,
+      "median": 13.0,
+      "range_low": 8.0,
+      "range_high": 17.0,
+      "responses": 28
+    },
+    {
+      "section": "Tillage",
+      "operation": "Land rolling / acre",
+      "unit": "acre",
+      "average": 9.75,
+      "median": 9.0,
+      "range_low": 4.0,
+      "range_high": 18.0,
+      "responses": 56
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "with fertilizer and insecticide attachments / acre",
+      "unit": "acre",
+      "average": 29.6,
+      "median": 27.5,
+      "range_low": 16.0,
+      "range_high": 50.0,
+      "responses": 47
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "without attachments / acre",
+      "unit": "acre",
+      "average": 26.5,
+      "median": 26.0,
+      "range_low": 15.0,
+      "range_high": 38.0,
+      "responses": 69
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "with splitters and attachments / acre",
+      "unit": "acre",
+      "average": 28.5,
+      "median": 28.0,
+      "range_low": 13.0,
+      "range_high": 47.0,
+      "responses": 49
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "with high-speed planter / acre",
+      "unit": "acre",
+      "average": 31.25,
+      "median": 30.0,
+      "range_low": 14.0,
+      "range_high": 56.0,
+      "responses": 71
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "no-till planter / acre",
+      "unit": "acre",
+      "average": 29.1,
+      "median": 28.3,
+      "range_low": 15.0,
+      "range_high": 46.0,
+      "responses": 76
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "no-till planter with splitters / acre",
+      "unit": "acre",
+      "average": 30.0,
+      "median": 29.9,
+      "range_low": 16.0,
+      "range_high": 45.0,
+      "responses": 58
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "ridge till planter / acre",
+      "unit": "acre",
+      "average": 28.45,
+      "median": 30.0,
+      "range_low": 24.0,
+      "range_high": 34.0,
+      "responses": 7
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Extra charge for seed shut-offs / acre",
+      "unit": "acre",
+      "average": 3.75,
+      "median": 3.2,
+      "range_low": 0.5,
+      "range_high": 10.0,
+      "responses": 70
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Extra charge for variable rate seeding / acre",
+      "unit": "acre",
+      "average": 3.9,
+      "median": 3.05,
+      "range_low": 1.0,
+      "range_high": 10.0,
+      "responses": 52
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Extra charge for GPS use, if used for analytics / acre",
+      "unit": "acre",
+      "average": 3.65,
+      "median": 3.25,
+      "range_low": 1.0,
+      "range_high": 10.0,
+      "responses": 45
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Seed tender / acre",
+      "unit": "acre",
+      "average": 5.05,
+      "median": 5.0,
+      "range_low": 2.0,
+      "range_high": 10.0,
+      "responses": 51
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Drilling soybean / acre",
+      "unit": "acre",
+      "average": 22.0,
+      "median": 21.0,
+      "range_low": 14.0,
+      "range_high": 28.0,
+      "responses": 33
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Drilling soybean, no-till / acre",
+      "unit": "acre",
+      "average": 24.15,
+      "median": 25.0,
+      "range_low": 15.0,
+      "range_high": 32.0,
+      "responses": 40
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Drilling grass seed / acre",
+      "unit": "acre",
+      "average": 21.8,
+      "median": 21.0,
+      "range_low": 10.0,
+      "range_high": 30.0,
+      "responses": 36
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Drilling small grain / acre",
+      "unit": "acre",
+      "average": 19.45,
+      "median": 20.0,
+      "range_low": 10.0,
+      "range_high": 27.0,
+      "responses": 30
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Seeding grass, broadcast with tractor / acre",
+      "unit": "acre",
+      "average": 15.65,
+      "median": 15.0,
+      "range_low": 8.0,
+      "range_high": 25.0,
+      "responses": 19
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Seeding grass, broadcast with ATV / acre",
+      "unit": "acre",
+      "average": 18.65,
+      "median": 16.5,
+      "range_low": 10.0,
+      "range_high": 30.0,
+      "responses": 16
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Aerial seeding of cover crop / acre",
+      "unit": "acre",
+      "average": 14.7,
+      "median": 15.0,
+      "range_low": 10.0,
+      "range_high": 18.0,
+      "responses": 25
+    },
+    {
+      "section": "Planting, Drilling, and Seeding",
+      "operation": "Drilling cover crop seed / acre",
+      "unit": "acre",
+      "average": 19.05,
+      "median": 19.25,
+      "range_low": 9.0,
+      "range_high": 25.0,
+      "responses": 39
+    },
+    {
+      "section": "Spraying",
+      "operation": "Ground, broadcast, not incorporated, tractor / acre",
+      "unit": "acre",
+      "average": 8.5,
+      "median": 8.0,
+      "range_low": 5.0,
+      "range_high": 14.0,
+      "responses": 35
+    },
+    {
+      "section": "Spraying",
+      "operation": "Ground, incorporated, tractor / acre",
+      "unit": "acre",
+      "average": 12.3,
+      "median": 10.35,
+      "range_low": 7.0,
+      "range_high": 18.0,
+      "responses": 10
+    },
+    {
+      "section": "Spraying",
+      "operation": "Ground, broadcast, not incorporated, self-propelled / acre",
+      "unit": "acre",
+      "average": 9.35,
+      "median": 9.0,
+      "range_low": 5.0,
+      "range_high": 18.0,
+      "responses": 121
+    },
+    {
+      "section": "Spraying",
+      "operation": "Ground, broadcast, self-propelled tall-crop / acre",
+      "unit": "acre",
+      "average": 11.15,
+      "median": 10.5,
+      "range_low": 6.0,
+      "range_high": 20.0,
+      "responses": 65
+    },
+    {
+      "section": "Spraying",
+      "operation": "Ground, banded, tractor / acre",
+      "unit": "acre",
+      "average": 12.2,
+      "median": 12.0,
+      "range_low": 8.5,
+      "range_high": 16.0,
+      "responses": 8
+    },
+    {
+      "section": "Spraying",
+      "operation": "Ground, road ditches / hour",
+      "unit": "hour",
+      "average": 90.45,
+      "median": 90.0,
+      "range_low": 25.0,
+      "range_high": 145.0,
+      "responses": 40
+    },
+    {
+      "section": "Spraying",
+      "operation": "Aerial / acre",
+      "unit": "acre",
+      "average": 12.0,
+      "median": 11.6,
+      "range_low": 9.0,
+      "range_high": 18.0,
+      "responses": 54
+    },
+    {
+      "section": "Spraying",
+      "operation": "Drone / acre",
+      "unit": "acre",
+      "average": 12.5,
+      "median": 12.0,
+      "range_low": 8.0,
+      "range_high": 16.0,
+      "responses": 47
+    },
+    {
+      "section": "Fertilizer Application",
+      "operation": "Dry bulk - applied / acre",
+      "unit": "acre",
+      "average": 8.15,
+      "median": 8.0,
+      "range_low": 4.0,
+      "range_high": 13.5,
+      "responses": 59
+    },
+    {
+      "section": "Fertilizer Application",
+      "operation": "Liquid - spraying / acre",
+      "unit": "acre",
+      "average": 9.45,
+      "median": 9.0,
+      "range_low": 5.0,
+      "range_high": 15.0,
+      "responses": 35
+    },
+    {
+      "section": "Fertilizer Application",
+      "operation": "side dressing / acre",
+      "unit": "acre",
+      "average": 14.1,
+      "median": 14.5,
+      "range_low": 9.0,
+      "range_high": 20.0,
+      "responses": 38
+    },
+    {
+      "section": "Fertilizer Application",
+      "operation": "high clearance, drop hose, Y spray nozzle / acre",
+      "unit": "acre",
+      "average": 13.25,
+      "median": 13.75,
+      "range_low": 8.0,
+      "range_high": 20.0,
+      "responses": 26
+    },
+    {
+      "section": "Fertilizer Application",
+      "operation": "Anhydrous   - injecting, with tool bar / acre",
+      "unit": "acre",
+      "average": 15.55,
+      "median": 15.0,
+      "range_low": 7.0,
+      "range_high": 28.0,
+      "responses": 79
+    },
+    {
+      "section": "Fertilizer Application",
+      "operation": "injecting, without tool bar / acre",
+      "unit": "acre",
+      "average": 13.45,
+      "median": 13.0,
+      "range_low": 8.0,
+      "range_high": 20.0,
+      "responses": 42
+    },
+    {
+      "section": "Fertilizer Application",
+      "operation": "side dressing / acre",
+      "unit": "acre",
+      "average": 13.55,
+      "median": 12.0,
+      "range_low": 8.0,
+      "range_high": 18.0,
+      "responses": 15
+    },
+    {
+      "section": "Fertilizer Application",
+      "operation": "Spreading lime / ton",
+      "unit": "ton",
+      "average": 8.3,
+      "median": 8.0,
+      "range_low": 5.0,
+      "range_high": 14.0,
+      "responses": 31
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "Corn combining / acre",
+      "unit": "acre",
+      "average": 46.05,
+      "median": 45.0,
+      "range_low": 25.0,
+      "range_high": 80.0,
+      "responses": 119
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "with chopper head / acre",
+      "unit": "acre",
+      "average": 50.6,
+      "median": 50.0,
+      "range_low": 25.0,
+      "range_high": 80.0,
+      "responses": 61
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "added charge for corn reel (downed corn) / acre",
+      "unit": "acre",
+      "average": 12.55,
+      "median": 11.0,
+      "range_low": 5.0,
+      "range_high": 30.0,
+      "responses": 34
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "Soybean combining / acre",
+      "unit": "acre",
+      "average": 43.05,
+      "median": 42.0,
+      "range_low": 24.0,
+      "range_high": 70.0,
+      "responses": 94
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "with air reel / acre",
+      "unit": "acre",
+      "average": 47.0,
+      "median": 46.0,
+      "range_low": 26.0,
+      "range_high": 70.0,
+      "responses": 21
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "with draper head / acre",
+      "unit": "acre",
+      "average": 48.2,
+      "median": 45.5,
+      "range_low": 24.0,
+      "range_high": 80.0,
+      "responses": 95
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "Small grain combining / acre",
+      "unit": "acre",
+      "average": 47.0,
+      "median": 45.0,
+      "range_low": 35.0,
+      "range_high": 65.0,
+      "responses": 13
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "Corn / acre",
+      "unit": "acre",
+      "average": 82.0,
+      "median": 75.0,
+      "range_low": 40.0,
+      "range_high": 175.0,
+      "responses": 67
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "Soybean / acre",
+      "unit": "acre",
+      "average": 77.4,
+      "median": 70.0,
+      "range_low": 32.0,
+      "range_high": 175.0,
+      "responses": 68
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "Added charge for GPS mapping / acre",
+      "unit": "acre",
+      "average": 3.95,
+      "median": 3.9,
+      "range_low": 1.0,
+      "range_high": 8.0,
+      "responses": 46
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "Picking ear corn / acre",
+      "unit": "acre",
+      "average": 49.7,
+      "median": 45.0,
+      "range_low": 30.0,
+      "range_high": 100.0,
+      "responses": 19
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "grain cart, corn / acre",
+      "unit": "acre",
+      "average": 9.25,
+      "median": 8.75,
+      "range_low": 3.0,
+      "range_high": 22.0,
+      "responses": 72
+    },
+    {
+      "section": "Harvesting, Drying, and Hauling Grain",
+      "operation": "grain cart, soybean / acre",
+      "unit": "acre",
+      "average": 8.1,
+      "median": 8.0,
+      "range_low": 2.0,
+      "range_high": 19.0,
+      "responses": 72
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "Hay  - mowing / acre",
+      "unit": "acre",
+      "average": 15.45,
+      "median": 15.0,
+      "range_low": 9.5,
+      "range_high": 21.0,
+      "responses": 20
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "mowing/conditioning / acre",
+      "unit": "acre",
+      "average": 17.3,
+      "median": 17.0,
+      "range_low": 10.0,
+      "range_high": 25.0,
+      "responses": 31
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "raking / acre",
+      "unit": "acre",
+      "average": 9.9,
+      "median": 10.0,
+      "range_low": 7.5,
+      "range_high": 15.0,
+      "responses": 24
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "merging / acre",
+      "unit": "acre",
+      "average": 12.4,
+      "median": 10.0,
+      "range_low": 8.0,
+      "range_high": 13.0,
+      "responses": 5
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "tedding / acre",
+      "unit": "acre",
+      "average": 11.85,
+      "median": 12.0,
+      "range_low": 8.0,
+      "range_high": 15.0,
+      "responses": 12
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "Swathing hay or small grain / acre",
+      "unit": "acre",
+      "average": 18.0,
+      "median": 20.0,
+      "range_low": 15.0,
+      "range_high": 22.0,
+      "responses": 5
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "Hay baling    - small square bales / bale",
+      "unit": "bale",
+      "average": 1.0,
+      "median": 1.0,
+      "range_low": 0.5,
+      "range_high": 1.5,
+      "responses": 16
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "large square bales / bale",
+      "unit": "bale",
+      "average": 14.9,
+      "median": 14.25,
+      "range_low": 13.0,
+      "range_high": 18.0,
+      "responses": 7
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "large round bales without wrap / bale",
+      "unit": "bale",
+      "average": 13.15,
+      "median": 12.0,
+      "range_low": 10.0,
+      "range_high": 20.0,
+      "responses": 11
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "large round bales with wrap / bale",
+      "unit": "bale",
+      "average": 15.75,
+      "median": 16.0,
+      "range_low": 12.0,
+      "range_high": 20.0,
+      "responses": 39
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "large round or square bales without wrap / bale",
+      "unit": "bale",
+      "average": 14.5,
+      "median": 14.0,
+      "range_low": 10.0,
+      "range_high": 20.0,
+      "responses": 8
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "large round or square bales with wrap / bale",
+      "unit": "bale",
+      "average": 16.85,
+      "median": 17.0,
+      "range_low": 12.0,
+      "range_high": 20.0,
+      "responses": 31
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "Moving large round bales to storage / bale",
+      "unit": "bale",
+      "average": 3.25,
+      "median": 3.0,
+      "range_low": 1.5,
+      "range_high": 5.0,
+      "responses": 11
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "Haul round bales by truck or trailer / bale / loaded mile",
+      "unit": "loaded mile",
+      "average": 0.29,
+      "median": 0.23,
+      "range_low": 0.18,
+      "range_high": 0.38,
+      "responses": 6
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "Haul round bales by truck or trailer / hour",
+      "unit": "hour",
+      "average": 118.0,
+      "median": 125.0,
+      "range_low": 90.0,
+      "range_high": 150.0,
+      "responses": 5
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "Silage -  chopping / hour / head row",
+      "unit": "head row",
+      "average": 77.4,
+      "median": 77.0,
+      "range_low": 50.0,
+      "range_high": 98.0,
+      "responses": 5
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "chopping / ton",
+      "unit": "ton",
+      "average": 9.2,
+      "median": 9.5,
+      "range_low": 7.0,
+      "range_high": 12.0,
+      "responses": 10
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "Filling silage bags / foot of bag",
+      "unit": "foot of bag",
+      "average": 11.3,
+      "median": 9.65,
+      "range_low": 9.0,
+      "range_high": 15.0,
+      "responses": 8
+    },
+    {
+      "section": "Harvesting Forages",
+      "operation": "Earlage or snaplage - chopping / acre",
+      "unit": "acre",
+      "average": 84.75,
+      "median": 82.5,
+      "range_low": 65.0,
+      "range_high": 100.0,
+      "responses": 8
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Removing snow (loader) / hour",
+      "unit": "hour",
+      "average": 114.05,
+      "median": 115.0,
+      "range_low": 50.0,
+      "range_high": 200.0,
+      "responses": 34
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Removing snow (blade) / hour / foot of blade",
+      "unit": "foot of blade",
+      "average": 14.25,
+      "median": 14.3,
+      "range_low": 12.5,
+      "range_high": 16.7,
+      "responses": 7
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Removing snow (blower) / hour / foot of blower",
+      "unit": "foot of blower",
+      "average": 16.95,
+      "median": 16.65,
+      "range_low": 4.15,
+      "range_high": 27.8,
+      "responses": 13
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Tub grinding hay / hour",
+      "unit": "hour",
+      "average": 273.9,
+      "median": 250.0,
+      "range_low": 100.0,
+      "range_high": 425.0,
+      "responses": 9
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Spreading liquid manure, injected / 1,000 gallon",
+      "unit": "1,000 gallon",
+      "average": 18.15,
+      "median": 17.0,
+      "range_low": 11.0,
+      "range_high": 29.0,
+      "responses": 16
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Applying liquid manure with drag line / 1,000 gallon",
+      "unit": "1,000 gallon",
+      "average": 16.85,
+      "median": 16.0,
+      "range_low": 12.5,
+      "range_high": 21.0,
+      "responses": 9
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Loading, spreading solid manure / ton",
+      "unit": "ton",
+      "average": 7.2,
+      "median": 6.5,
+      "range_low": 5.0,
+      "range_high": 9.0,
+      "responses": 7
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Power washing / hour",
+      "unit": "hour",
+      "average": 78.85,
+      "median": 80.0,
+      "range_low": 50.0,
+      "range_high": 100.0,
+      "responses": 13
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Building fence, barbed (no materials) / hour",
+      "unit": "hour",
+      "average": 42.7,
+      "median": 44.0,
+      "range_low": 35.0,
+      "range_high": 50.0,
+      "responses": 7
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Scouting crops / acre",
+      "unit": "acre",
+      "average": 6.65,
+      "median": 6.0,
+      "range_low": 4.0,
+      "range_high": 9.5,
+      "responses": 13
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "GPS grid soil testing / acre",
+      "unit": "acre",
+      "average": 7.95,
+      "median": 8.0,
+      "range_low": 3.0,
+      "range_high": 12.5,
+      "responses": 18
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Managing stored grain / bushel",
+      "unit": "bushel",
+      "average": 0.08,
+      "median": 0.08,
+      "range_low": 0.03,
+      "range_high": 0.12,
+      "responses": 12
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Vacuuming grain / bushel",
+      "unit": "bushel",
+      "average": 0.12,
+      "median": 0.1,
+      "range_low": 0.05,
+      "range_high": 0.2,
+      "responses": 29
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Livestock hauling with semi-truck / loaded mile",
+      "unit": "loaded mile",
+      "average": 4.7,
+      "median": 5.0,
+      "range_low": 3.5,
+      "range_high": 5.75,
+      "responses": 9
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Bulldozing / hour / foot of blade",
+      "unit": "foot of blade",
+      "average": 17.55,
+      "median": 16.5,
+      "range_low": 12.0,
+      "range_high": 22.5,
+      "responses": 16
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Trenching / foot",
+      "unit": "foot",
+      "average": 1.6,
+      "median": 1.75,
+      "range_low": 1.25,
+      "range_high": 2.0,
+      "responses": 5
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Tiling, tiling machine (excluding materials) / foot",
+      "unit": "foot",
+      "average": 1.7,
+      "median": 1.75,
+      "range_low": 1.05,
+      "range_high": 2.3,
+      "responses": 7
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Tiling, tile plow (excluding materials) / foot",
+      "unit": "foot",
+      "average": 1.15,
+      "median": 1.0,
+      "range_low": 0.5,
+      "range_high": 1.75,
+      "responses": 12
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Backhoeing / hour",
+      "unit": "hour",
+      "average": 129.35,
+      "median": 130.0,
+      "range_low": 70.0,
+      "range_high": 200.0,
+      "responses": 23
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Clearing land / hour",
+      "unit": "hour",
+      "average": 161.65,
+      "median": 170.0,
+      "range_low": 100.0,
+      "range_high": 225.0,
+      "responses": 15
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Building ponds / hour",
+      "unit": "hour",
+      "average": 161.65,
+      "median": 150.0,
+      "range_low": 125.0,
+      "range_high": 210.0,
+      "responses": 6
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Chain sawing / hour",
+      "unit": "hour",
+      "average": 89.15,
+      "median": 87.5,
+      "range_low": 50.0,
+      "range_high": 120.0,
+      "responses": 18
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Welding machinery / hour",
+      "unit": "hour",
+      "average": 83.85,
+      "median": 85.0,
+      "range_low": 40.0,
+      "range_high": 110.0,
+      "responses": 15
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Mowing CRP or pasture / acre",
+      "unit": "acre",
+      "average": 27.05,
+      "median": 27.0,
+      "range_low": 12.0,
+      "range_high": 50.0,
+      "responses": 47
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Controlled burning of grass, CRP, pasture / acre",
+      "unit": "acre",
+      "average": 33.35,
+      "median": 30.0,
+      "range_low": 20.0,
+      "range_high": 60.0,
+      "responses": 25
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Mowing fence rows, ditches / hour",
+      "unit": "hour",
+      "average": 103.2,
+      "median": 100.0,
+      "range_low": 20.0,
+      "range_high": 150.0,
+      "responses": 45
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Mowing lawns / hour",
+      "unit": "hour",
+      "average": 56.65,
+      "median": 60.0,
+      "range_low": 20.0,
+      "range_high": 100.0,
+      "responses": 30
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Chopping brush / acre",
+      "unit": "acre",
+      "average": 105.55,
+      "median": 100.0,
+      "range_low": 25.0,
+      "range_high": 200.0,
+      "responses": 18
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Using truck scale / load weighed",
+      "unit": "load weighed",
+      "average": 11.15,
+      "median": 10.0,
+      "range_low": 5.0,
+      "range_high": 19.25,
+      "responses": 8
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Corn / acre",
+      "unit": "acre",
+      "average": 177.85,
+      "median": 165.0,
+      "range_low": 74.5,
+      "range_high": 375.0,
+      "responses": 64
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Soybean / acre",
+      "unit": "acre",
+      "average": 161.7,
+      "median": 155.0,
+      "range_low": 65.0,
+      "range_high": 353.0,
+      "responses": 63
+    },
+    {
+      "section": "Miscellaneous",
+      "operation": "Small grain / acre",
+      "unit": "acre",
+      "average": 186.15,
+      "median": 167.0,
+      "range_low": 70.0,
+      "range_high": 290.0,
+      "responses": 13
+    },
+    {
+      "section": "Spraying",
+      "operation": "Other operations / hour",
+      "unit": "hour",
+      "average": 22.95,
+      "median": 22.0,
+      "range_low": 15.0,
+      "range_high": 40.0,
+      "responses": 105
+    },
+    {
+      "section": "Machinery Rental",
+      "operation": "Tractor / horsepower / hour",
+      "unit": "hour",
+      "average": 0.34,
+      "median": 0.35,
+      "range_low": 0.14,
+      "range_high": 0.5,
+      "responses": 18
+    },
+    {
+      "section": "Machinery Rental",
+      "operation": "Corn head for combine / acre",
+      "unit": "acre",
+      "average": 11.6,
+      "median": 10.0,
+      "range_low": 5.0,
+      "range_high": 20.0,
+      "responses": 11
+    },
+    {
+      "section": "Machinery Rental",
+      "operation": "Soybean head for combine / acre",
+      "unit": "acre",
+      "average": 13.45,
+      "median": 15.0,
+      "range_low": 5.0,
+      "range_high": 20.0,
+      "responses": 9
+    },
+    {
+      "section": "Machinery Rental",
+      "operation": "Grain cart with auger, corn / acre",
+      "unit": "acre",
+      "average": 6.7,
+      "median": 6.0,
+      "range_low": 6.0,
+      "range_high": 12.0,
+      "responses": 7
+    },
+    {
+      "section": "Machinery Rental",
+      "operation": "Grain cart with auger, soybean / acre",
+      "unit": "acre",
+      "average": 5.85,
+      "median": 5.0,
+      "range_low": 5.0,
+      "range_high": 10.0,
+      "responses": 6
+    },
+    {
+      "section": "Machinery Rental",
+      "operation": "Grain truck (semi) / bushel / round trip",
+      "unit": "round trip",
+      "average": 0.2,
+      "median": 0.2,
+      "range_low": 0.18,
+      "range_high": 0.22,
+      "responses": 5
+    },
+    {
+      "section": "Machinery Rental",
+      "operation": "Grain auger / bushel",
+      "unit": "bushel",
+      "average": 0.08,
+      "median": 0.1,
+      "range_low": 0.05,
+      "range_high": 0.12,
+      "responses": 7
+    },
+    {
+      "section": "Machinery Rental",
+      "operation": "Grain vacuum / bushel",
+      "unit": "bushel",
+      "average": 0.1,
+      "median": 0.1,
+      "range_low": 0.07,
+      "range_high": 0.13,
+      "responses": 8
+    },
+    {
+      "section": "Machinery Rental",
+      "operation": "Skid loader / hour",
+      "unit": "hour",
+      "average": 97.5,
+      "median": 100.0,
+      "range_low": 80.0,
+      "range_high": 120.0,
+      "responses": 8
+    },
+    {
+      "section": "Machinery Rental",
+      "operation": "Dry bulk fertilizer applicator / acre",
+      "unit": "acre",
+      "average": 7.05,
+      "median": 7.5,
+      "range_low": 5.0,
+      "range_high": 9.0,
+      "responses": 8
+    },
+    {
+      "section": "Machinery Rental",
+      "operation": "Anhydrous fertilizer applicator / acre",
+      "unit": "acre",
+      "average": 9.5,
+      "median": 11.0,
+      "range_low": 3.0,
+      "range_high": 15.0,
+      "responses": 8
+    }
+  ]
+}

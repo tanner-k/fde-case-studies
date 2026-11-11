@@ -1,0 +1,216 @@
+{
+  "$comment": "Decomposition of the USDA ERS `Chemicals` operating-cost line into the portion See & Spray can actually address. Narrative, sourcing and reasoning: deliverables/appendix/assumptions.md. Do not change a value here without changing that file.",
+  "schema_version": 1,
+  "generated": "2026-08-11",
+  "region": "Heartland (USDA ERS farm resource region; contains Iowa)",
+  "cost_year": 2025,
+  "units": "USD per planted acre",
+  "distribution": {
+    "family": "triangular",
+    "parameters": ["low", "mode", "high"],
+    "note": "Ranges are expert intervals over a small number of published observations, not fitted confidence intervals. Triangular is the honest choice: it encodes a most-likely value and hard bounds without implying a sample. numpy.random.triangular(low, mode, high)."
+  },
+
+  "crops": {
+    "corn": {
+      "ers_chemicals_total": {
+        "value": 49.23,
+        "status": "measured",
+        "source": "ers_ccr"
+      },
+      "herbicide_share": {
+        "low": 0.78,
+        "mode": 0.85,
+        "high": 0.90,
+        "status": "measured",
+        "source": ["singh_jhala_2025", "ers_ccr"],
+        "basis": "Singh & Jhala national corn herbicide $88/ha = $35.61/ac vs ERS U.S. corn Chemicals $41.32/ac, both 2021 (an ERS base survey year) = 86.2%. Range widened for the list-price vs realised-expenditure method difference."
+      },
+      "addressable_share": {
+        "low": 0.18,
+        "mode": 0.30,
+        "high": 0.45,
+        "status": "estimated",
+        "source": ["purdue_geography_2026", "unl_016_2026", "werle_2024"],
+        "basis": "Purdue Indiana corn post-emergence PASS share averages 48.3% (37-56%) but includes residual products (s-metolachlor) carried in the post tank; discounting for that gives ~29% truly non-residual. UNL #016 gives 17.7% but on conventional seed with no glyphosate in the post pass, which understates a typical Iowa trait-based program.",
+        "uncertainty": "+/-40% of mode. Dominated by grower program design, not measurement error."
+      },
+      "derived_targeted_usd_per_acre": {
+        "low": 6.91,
+        "mode": 12.55,
+        "high": 19.94,
+        "status": "derived",
+        "formula": "ers_chemicals_total * herbicide_share * addressable_share",
+        "note": "Convenience only. Sample herbicide_share and addressable_share independently in Monte Carlo rather than sampling this directly; the endpoints here are the product of the endpoints and so overstate the tail width of the true product distribution."
+      },
+      "non_addressable_components": {
+        "$comment": "Reported for audit so the decomposition closes against the ERS total. Not used downstream - See & Spray addresses none of these.",
+        "residual_herbicide": {"mode": 29.29, "status": "derived"},
+        "fungicide": {"low": 3.0, "mode": 6.5, "high": 10.0, "status": "estimated"},
+        "insecticide": {"low": 0.3, "mode": 0.9, "high": 2.0, "status": "estimated"}
+      }
+    },
+
+    "soybeans": {
+      "ers_chemicals_total": {
+        "value": 52.61,
+        "status": "measured",
+        "source": "ers_ccr"
+      },
+      "herbicide_share": {
+        "low": 0.76,
+        "mode": 0.84,
+        "high": 0.90,
+        "status": "measured",
+        "source": ["singh_jhala_2025", "ers_ccr", "nass_ia_soybeans_2023"],
+        "basis": "Singh & Jhala national soybean herbicide $125/ha = $50.59/ac vs ERS U.S. soybean Chemicals $61.12/ac, both 2023 (an ERS base survey year) = 82.8%. Corroborated for Iowa by NASS acres treated: herbicide 95%, fungicide 33%, insecticide 29% of planted acres."
+      },
+      "addressable_share": {
+        "low": 0.25,
+        "mode": 0.42,
+        "high": 0.60,
+        "status": "estimated",
+        "source": ["unl_059_2026", "unl_060_2026", "mo_se_enlist_2021", "werle_2024"],
+        "basis": "Observations: 55.3% (UNL #059 XtendFlex, conv-till), 65.3% (Missouri SE Enlist - Delta, biased high vs Iowa), 16.1% as-written / ~34% restructured (UNL #060 Enlist E3 no-till). Soybean post passes carry richer foliar chemistry than corn's. Range spans the residual-placement decision.",
+        "uncertainty": "+/-40% of mode. Dominated by grower program design, not measurement error."
+      },
+      "derived_targeted_usd_per_acre": {
+        "low": 10.00,
+        "mode": 18.56,
+        "high": 28.41,
+        "status": "derived",
+        "formula": "ers_chemicals_total * herbicide_share * addressable_share",
+        "note": "See corn note - sample the two shares independently."
+      },
+      "non_addressable_components": {
+        "residual_herbicide": {"mode": 25.63, "status": "derived"},
+        "fungicide": {"low": 4.0, "mode": 7.0, "high": 11.0, "status": "estimated"},
+        "insecticide": {"low": 0.5, "mode": 1.4, "high": 3.0, "status": "estimated"}
+      }
+    }
+  },
+
+  "machine_constraint": {
+    "$comment": "First-order constraint the naive savings model misses. See assumptions.md section 4.1.",
+    "see_and_spray_premium": {
+      "tank_configuration": "single tank, single boom",
+      "can_broadcast_residual_while_spot_spraying": false,
+      "implication": "Only passes whose tank contains NO residual product are addressable. A grower keeping overlapping residuals in the post-emergence pass has near-zero addressable spend regardless of the shares above. The addressable_share ranges assume a grower who has restructured toward a broadcast PRE plus a clean foliar POST, per Werle (2024).",
+      "source": "werle_2024"
+    },
+    "see_and_spray_ultimate": {
+      "tank_configuration": "dual tank, dual boom",
+      "can_broadcast_residual_while_spot_spraying": true,
+      "implication": "Addressable share is the full non-residual fraction of herbicide spend irrespective of pass structure - roughly the high end of the ranges above.",
+      "source": "werle_2024"
+    }
+  },
+
+  "breakeven_reference": {
+    "$comment": "From UADA FSA2225 Table 1 - see deliverables/appendix/sources.md section 4. Included here so the engine can flag a scenario as above or below break-even without a second lookup.",
+    "premium_usd_per_acre": 11.0,
+    "ultimate_usd_per_acre": 15.5,
+    "source": "uada_fsa2225_2025"
+  },
+
+  "regional_bias": {
+    "$comment": "Direction and size of the Arkansas-to-Iowa correction on the UADA break-even. See assumptions.md section 7.",
+    "comparison": "ERS soybean Chemicals, Mississippi Portal (contains Arkansas) vs Heartland",
+    "gap_base_survey_year_2023": 0.020,
+    "gap_five_year_mean_2021_2025": 0.124,
+    "herbicide_use_rate_gap_by_mass": 0.43,
+    "interpretation": "Expenditure gap is small (+2.0% in the only directly-surveyed year); physical use rate gap is large (+43%). The Mid-South applies more, cheaper, higher-rate active ingredient at similar total cost. Only dollars drive this ROI, so UADA's break-even transfers to Iowa better than originally assumed. No corn comparison is possible - ERS publishes no Mississippi Portal corn budget.",
+    "corn_comparison_available": false
+  },
+
+  "sources": {
+    "ers_ccr": {
+      "title": "USDA ERS Commodity Costs and Returns",
+      "url": "https://www.ers.usda.gov/media/4962/corn.csv",
+      "url_soybeans": "https://www.ers.usda.gov/media/4976/soybeans.csv",
+      "retrieved": "2026-08-11",
+      "note": "Corn regional values are Base survey of 2021; soybean are Base survey of 2023. Non-base years are index-projected. `Chemicals` is materials only - `Custom services` is a separate line.",
+      "licence": "US Government work, public domain"
+    },
+    "singh_jhala_2025": {
+      "citation": "Singh, M. and Jhala, A.J. (2025). Perspectives on the economics of herbicide usage in corn and soybean production in the United States. Weed Technology 39: e19.",
+      "url": "https://doi.org/10.1017/wet.2025.19",
+      "retrieved": "2026-08-11",
+      "peer_reviewed": true,
+      "method": "USDA-NASS active ingredient usage x average retail price from 2021-2023 KSU/UNL/NDSU extension price lists. Herbicide only; excludes adjuvants and application."
+    },
+    "purdue_geography_2026": {
+      "citation": "Stephens, M. (Carns), under Fiechter, C. Indiana Herbicide Program Costs Through the Lens of Geography. Purdue Center for Commercial Agriculture, 2026-04-28.",
+      "url": "https://ag.purdue.edu/commercialag/home/resource/2026/04/indiana-herbicide-program-costs-through-the-lens-of-geography/",
+      "retrieved": "2026-08-11",
+      "underlying_data": "Purdue Agricultural Centers' Enterprise Budgets 2026, corn",
+      "note": "Values read from Figures 1 and 2 (charts, not tables) - carry +/-1-2 pp reading error. Post share by centre: PPAC 55, SWPAC 48, NEPAC 53, SEPAC 38, FPAC 56, DPAC 51, ACRE 37."
+    },
+    "unl_016_2026": {
+      "citation": "UNL 2026 Nebraska Crop Budget #016, Corn, Dryland, Conventional Seed, Corn-Soybean Rotation",
+      "url": "https://cap.unl.edu/cropbudgets",
+      "retrieved": "2026-08-11",
+      "note": "Input prices surveyed Aug-Oct 2025. Herbicide materials $61.54/ac: Lumax EZ PRE $50.63 (residual), Laudis+MSO+UAN POST $10.91 (foliar, 50% of acres)."
+    },
+    "unl_059_2026": {
+      "citation": "UNL 2026 Nebraska Crop Budget #059, Soybeans, Dryland, Conv. Till after Corn (XtendFlex)",
+      "url": "https://cap.unl.edu/cropbudgets",
+      "retrieved": "2026-08-11",
+      "note": "Herbicide materials $55.74/ac: Zidua Pro PRE $24.90 (residual), glyphosate+AMS+Select Max+FlexStar GT POST $30.84 (foliar)."
+    },
+    "unl_060_2026": {
+      "citation": "UNL 2026 Nebraska Crop Budget #060, Soybeans, Dryland, No Till after Corn (Enlist E3)",
+      "url": "https://cap.unl.edu/cropbudgets",
+      "retrieved": "2026-08-11",
+      "note": "Herbicide materials $57.52/ac across three passes. Two of three tanks contain a residual, so only the $9.27 burndown is Premium-addressable as written - the clearest illustration of the single-tank constraint."
+    },
+    "mo_se_enlist_2021": {
+      "citation": "University of Missouri Extension, Southeast Missouri Crop Budget, 2021 Enlist Soybean",
+      "url": "https://extension.missouri.edu/media/wysiwyg/Extensiondata/CountyPages/Scott/CropBudgets/Soybeans-Enlist.pdf",
+      "retrieved": "2026-08-11",
+      "note": "Explicit line items: Pre-Emerge $17.00, Post-Emerge 2 x $16.00, Fungicide $15.00, Insecticide $5.00. Regional bias: SE Missouri is Delta, Palmer amaranth pressure above Iowa's - overstates the Iowa post share."
+    },
+    "osu_budgets_2026": {
+      "citation": "Ohio State University Farm Office, 2026 Corn and Soybean Production Budgets, updated 2026-05-27",
+      "url": "https://farmoffice.osu.edu/farm-management/enterprise-budgets",
+      "retrieved": "2026-08-11",
+      "note": "Used for reconciliation only (assumptions.md section 6). Clean three-way split: corn herbicide $45.00, soybean $46.00, fungicide $0 (avg yield) or $22.50 (high yield), insecticide $0."
+    },
+    "nass_ia_soybeans_2023": {
+      "citation": "USDA NASS, Iowa Ag News - Chemical Use, Soybeans: Fall 2023, released 2024-05-13",
+      "url": "https://www.nass.usda.gov/Statistics_by_State/Iowa/Publications/Other_Surveys/2024/IA-Ag-Chem-Soybeans-05-24.pdf",
+      "retrieved": "2026-08-11",
+      "note": "Iowa soybean planted acres treated: herbicide 95%, fungicide 33%, insecticide 29%. Collected as part of ARMS.",
+      "licence": "US Government work, public domain"
+    },
+    "werle_2024": {
+      "citation": "Werle, R. You upgraded to the John Deere See & Spray Premium precision system, now what? University of Wisconsin-Madison, WiscWeeds, 2024-04-10.",
+      "url": "https://wiscweeds.info/posts/2024see&spraypremium/",
+      "retrieved": "2026-08-11",
+      "note": "Source for the single-tank constraint and for the recommended adaptation: move residuals to a broadcast PRE, run a clean foliar POST (Liberty + Enlist One + clethodim) through See & Spray."
+    },
+    "uada_fsa2225_2025": {
+      "citation": "Avent, Norsworthy, Nalley, Barber, Scott. Opportunity Costs to Consider when Adopting See & Spray. University of Arkansas System Division of Agriculture, FSA2225-PD-9-2025.",
+      "url": "https://www.uaex.uada.edu/publications/pdf/FSA2225.pdf",
+      "retrieved": "2026-08-10",
+      "note": "See deliverables/appendix/sources.md section 4 for the full Table 1."
+    }
+  },
+
+  "not_retrieved": {
+    "$comment": "Named so their absence is auditable rather than invisible.",
+    "iowa_state_a1_20": {
+      "title": "Estimated Costs of Crop Production in Iowa (A1-20), 2026",
+      "url": "https://www.extension.iastate.edu/agdm/crops/pdf/a1-20.pdf",
+      "attempted": "2026-08-11",
+      "blocker": "extension.iastate.edu serves an Anubis proof-of-work bot challenge to automated clients; HTTP 403 to curl and to server-side fetches. Not bypassed.",
+      "action": "Manual download required. Highest-value single addition to this analysis.",
+      "secondary_figure_available": "Singh & Jhala cite an ISU corn herbicide budget of $98/ha = $39.66/ac, which falls inside the corn herbicide range derived here."
+    },
+    "iowa_state_wc_94": {
+      "title": "Herbicide Guide for Iowa Corn and Soybean Production (WC 94)",
+      "blocker": "same",
+      "action": "Manual download. Prices individual treatments; would convert the addressable_share estimate into a measured Iowa-specific figure."
+    }
+  }
+}

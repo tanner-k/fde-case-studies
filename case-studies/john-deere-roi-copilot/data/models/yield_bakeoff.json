@@ -1,0 +1,179 @@
+{
+  "$comment": "Yield model bake-off: quantile gradient boosting against a climatology baseline, pinball loss on held-out years. Method and interpretation: deliverables/appendix/model-card.md. Regenerate with scripts/train_yield_model.py.",
+  "crops": {
+    "CORN": {
+      "baseline_pinball": 5.24396142,
+      "gbm_improvement_pct": 3.20566945,
+      "gbm_pinball": 5.07585736,
+      "gbm_years_won": 4,
+      "per_year": [
+        {
+          "baseline_pinball": 10.46388477,
+          "gbm_pinball": 5.95146854,
+          "n_counties": 95,
+          "year": 2016
+        },
+        {
+          "baseline_pinball": 5.1321076,
+          "gbm_pinball": 3.60446836,
+          "n_counties": 95,
+          "year": 2017
+        },
+        {
+          "baseline_pinball": 4.63229919,
+          "gbm_pinball": 5.18875505,
+          "n_counties": 90,
+          "year": 2018
+        },
+        {
+          "baseline_pinball": 3.7512206,
+          "gbm_pinball": 4.00699809,
+          "n_counties": 83,
+          "year": 2019
+        },
+        {
+          "baseline_pinball": 8.81635444,
+          "gbm_pinball": 9.06026763,
+          "n_counties": 84,
+          "year": 2020
+        },
+        {
+          "baseline_pinball": 3.73535575,
+          "gbm_pinball": 5.92190798,
+          "n_counties": 80,
+          "year": 2021
+        },
+        {
+          "baseline_pinball": 3.71240494,
+          "gbm_pinball": 5.05733256,
+          "n_counties": 84,
+          "year": 2022
+        },
+        {
+          "baseline_pinball": 4.53536606,
+          "gbm_pinball": 3.86574791,
+          "n_counties": 87,
+          "year": 2023
+        },
+        {
+          "baseline_pinball": 4.72970843,
+          "gbm_pinball": 5.45401655,
+          "n_counties": 66,
+          "year": 2024
+        },
+        {
+          "baseline_pinball": 2.93091247,
+          "gbm_pinball": 2.64761088,
+          "n_counties": 63,
+          "year": 2025
+        }
+      ],
+      "ships": "climatology_baseline",
+      "years_evaluated": 10
+    },
+    "SOYBEANS": {
+      "baseline_pinball": 1.46361659,
+      "gbm_improvement_pct": -3.92842387,
+      "gbm_pinball": 1.52111365,
+      "gbm_years_won": 4,
+      "per_year": [
+        {
+          "baseline_pinball": 3.16962863,
+          "gbm_pinball": 1.71302811,
+          "n_counties": 97,
+          "year": 2016
+        },
+        {
+          "baseline_pinball": 0.98227036,
+          "gbm_pinball": 1.1779353,
+          "n_counties": 96,
+          "year": 2017
+        },
+        {
+          "baseline_pinball": 1.04404407,
+          "gbm_pinball": 1.32962567,
+          "n_counties": 93,
+          "year": 2018
+        },
+        {
+          "baseline_pinball": 1.09869278,
+          "gbm_pinball": 1.39292153,
+          "n_counties": 80,
+          "year": 2019
+        },
+        {
+          "baseline_pinball": 1.42309274,
+          "gbm_pinball": 1.3736808,
+          "n_counties": 71,
+          "year": 2020
+        },
+        {
+          "baseline_pinball": 1.84833486,
+          "gbm_pinball": 2.58335951,
+          "n_counties": 66,
+          "year": 2021
+        },
+        {
+          "baseline_pinball": 1.30679475,
+          "gbm_pinball": 1.69729945,
+          "n_counties": 75,
+          "year": 2022
+        },
+        {
+          "baseline_pinball": 1.57144318,
+          "gbm_pinball": 1.77365225,
+          "n_counties": 82,
+          "year": 2023
+        },
+        {
+          "baseline_pinball": 1.23892005,
+          "gbm_pinball": 1.23293097,
+          "n_counties": 61,
+          "year": 2024
+        },
+        {
+          "baseline_pinball": 0.95294445,
+          "gbm_pinball": 0.93670292,
+          "n_counties": 57,
+          "year": 2025
+        }
+      ],
+      "ships": "climatology_baseline",
+      "years_evaluated": 10
+    }
+  },
+  "features": [
+    "year",
+    "gdd_50_86",
+    "precip_in_apr_oct",
+    "precip_in_june",
+    "hot_days_jul_aug",
+    "tmax_f_july",
+    "yield_lag1_bu_per_acre"
+  ],
+  "holdout_years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "quantiles": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9
+  ],
+  "schema_version": 1,
+  "seed": 0,
+  "source": {
+    "nass_sha256": "c50ffbec8a7e6e1e24dc7baa80ffac6e61338c6cb7a4546f9f4d72c2b1469987",
+    "weather_sha256": "9730b5a8e18bbd4bf0fac0a4aaa8c7f01267afdda220cffcb1ab1f9a5f37d03b"
+  }
+}

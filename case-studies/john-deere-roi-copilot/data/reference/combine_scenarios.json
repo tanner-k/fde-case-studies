@@ -1,0 +1,188 @@
+{
+  "scenario": "Iowa dual-use corn and soybean combine workload",
+  "source_records": [
+    {
+      "id": "author_workload_definition_2026",
+      "effective_or_as_of_date": "2026-09-21",
+      "accessed_date": "2026-09-21",
+      "geography": "Iowa",
+      "equipment_or_scope": "2,400 total crop acres; one corn and one soybean harvest pass",
+      "source_url_or_archive_path": "docs/superpowers/plans/2026-09-21-dual-use-combine-analysis.md",
+      "evidence_class": "author_assumption",
+      "confidence": "author_estimate",
+      "uncertainty_range": null
+    },
+    {
+      "id": "operations_capacity_2026",
+      "effective_or_as_of_date": "2026-09-21",
+      "accessed_date": "2026-09-21",
+      "geography": "Iowa",
+      "equipment_or_scope": "author-curated corn_combine and soybean_combine productive field capacities",
+      "source_url_or_archive_path": "data/reference/operations.json",
+      "evidence_class": "author_assumption",
+      "confidence": "author_estimate",
+      "uncertainty_range": null
+    },
+    {
+      "id": "a3_10_corn_combine_only_2026",
+      "effective_or_as_of_date": "2026-03-01",
+      "accessed_date": "2026-09-22",
+      "geography": "Iowa",
+      "equipment_or_scope": "Corn combining only: $46.05 per acre average; $45 median; $25-$80 range; 119 responses",
+      "source_url_or_archive_path": "data/reference/isu-a3-10-2026-iowa-farm-custom-rate-survey.pdf",
+      "evidence_class": "published",
+      "confidence": "sourced_published",
+      "uncertainty_range": "$25-$80 per acre survey range"
+    },
+    {
+      "id": "a3_10_soy_combine_only_2026",
+      "effective_or_as_of_date": "2026-03-01",
+      "accessed_date": "2026-09-22",
+      "geography": "Iowa",
+      "equipment_or_scope": "Soybean combining only: $43.05 per acre average; $42 median; $24-$70 range; 94 responses",
+      "source_url_or_archive_path": "data/reference/isu-a3-10-2026-iowa-farm-custom-rate-survey.pdf",
+      "evidence_class": "published",
+      "confidence": "sourced_published",
+      "uncertainty_range": "$24-$70 per acre survey range"
+    },
+    {
+      "id": "a3_10_soy_draper_service_2026",
+      "effective_or_as_of_date": "2026-03-01",
+      "accessed_date": "2026-09-22",
+      "geography": "Iowa",
+      "equipment_or_scope": "Soybean combining with draper head service: $48.20 per acre average; $45.50 median; $24-$80 range; 95 responses",
+      "source_url_or_archive_path": "data/reference/isu-a3-10-2026-iowa-farm-custom-rate-survey.pdf",
+      "evidence_class": "published",
+      "confidence": "sourced_published",
+      "uncertainty_range": "$24-$80 per acre survey range"
+    },
+    {
+      "id": "a3_29_combine_sp_unit_2026",
+      "effective_or_as_of_date": "2026-09-22",
+      "accessed_date": "2026-09-22",
+      "geography": "Iowa",
+      "equipment_or_scope": "A3-29 Combine SP unit: RC1 0.025, RC2 2.1, wearout 3,000 h; remaining-value coefficients 1.1318, 0.1645, 0.0079",
+      "source_url_or_archive_path": "data/reference/isu-a3-29-machinery-cost-calculator.xlsx",
+      "evidence_class": "published",
+      "confidence": "sourced_published",
+      "uncertainty_range": "Published generic machine class; not a specific machine price or condition record"
+    },
+    {
+      "id": "a3_29_combine_head_2026",
+      "effective_or_as_of_date": "2026-09-22",
+      "accessed_date": "2026-09-22",
+      "geography": "Iowa",
+      "equipment_or_scope": "A3-29 Combine head: RC1 0.05, RC2 2.3, wearout 2,000 h; remaining-value coefficients 1.1318, 0.1645, 0.0079",
+      "source_url_or_archive_path": "data/reference/isu-a3-29-machinery-cost-calculator.xlsx",
+      "evidence_class": "published",
+      "confidence": "sourced_published",
+      "uncertainty_range": "Generic machine class; not model-specific condition, repair, or resale evidence"
+    },
+    {
+      "id": "deere_x9_c12f_rd40f_compatibility",
+      "effective_or_as_of_date": "2026-09-22",
+      "accessed_date": "2026-09-22",
+      "geography": "United States",
+      "equipment_or_scope": "Deere X9 front-end compatibility table marks C12F and RD40F compatible with X9 combines",
+      "source_url_or_archive_path": "https://www.deere.com/assets/pdfs/region-4/products/harvesting/x-series-combines/4592750-x-series-combines.pdf",
+      "evidence_class": "published",
+      "confidence": "sourced_published",
+      "uncertainty_range": "Does not establish installed adapters/options or delivered price"
+    },
+    {
+      "id": "ask_x9_1100_2024_machinefinder",
+      "effective_or_as_of_date": "2025-11-14",
+      "accessed_date": "2026-09-22",
+      "geography": "United States",
+      "equipment_or_scope": "2024 Deere X9 1100, 816 h, Header: No, public $584,000 asking price",
+      "source_url_or_archive_path": "https://www.machinefinder.com/ww/en-US/machines/2024-john-deere-x9-1100-combine-10468480",
+      "evidence_class": "listing",
+      "confidence": "listing_unverified",
+      "uncertainty_range": "Public asking price; no head included; not a new-equipment quote or documented sale"
+    },
+    {
+      "id": "ask_rd40f_2024_equipment_trader",
+      "effective_or_as_of_date": "2026-09-22",
+      "accessed_date": "2026-09-22",
+      "geography": "Illinois",
+      "equipment_or_scope": "2024 Deere RD40F, 40 ft, public $125,900 asking price; listing describes MY20+ S-Series hookups",
+      "source_url_or_archive_path": "https://www.equipmenttrader.com/listing/2024-John%2BDeere-RD40F-5038372772",
+      "evidence_class": "listing",
+      "confidence": "listing_unverified",
+      "uncertainty_range": "Public asking price; no operating hours, inspection, or completed sale evidence"
+    },
+    {
+      "id": "listing_s780_2020_tractorzoom",
+      "effective_or_as_of_date": "2026-09-22",
+      "accessed_date": "2026-09-22",
+      "geography": "Minnesota",
+      "equipment_or_scope": "2020 Deere S780, serial 1H0S780SHLT811388, Header: No; public listing observed",
+      "source_url_or_archive_path": "https://tractorzoom.com/equipment/2020-john-deere-s780-63386702-0cdb-4e92-a608-c65c5dc4e32d",
+      "evidence_class": "listing",
+      "confidence": "listing_unverified",
+      "uncertainty_range": "No archived capture supports a stable price or hour claim; public listing is not an inspection, repair history, quote, or documented sale"
+    },
+    {
+      "id": "ask_c12r_2020_marketbook",
+      "effective_or_as_of_date": "2026-09-22",
+      "accessed_date": "2026-09-22",
+      "geography": "United States",
+      "equipment_or_scope": "2020 Deere C12R 12-row 30-inch non-chopping head, serial 1H0C12RXEL0815011, public $91,700 asking price; listing says S-Series MY20+ compatible",
+      "source_url_or_archive_path": "https://www.marketbook.bo/listado/para-la-venta/251716985/2020-john-deere-c12r-cabezales-para-cultivos-en-hilera",
+      "evidence_class": "listing",
+      "confidence": "listing_unverified",
+      "uncertainty_range": "Public asking price; no head hours/acres, inspection, repair, or completed sale evidence"
+    },
+    {
+      "id": "timing_research_gate_2026",
+      "effective_or_as_of_date": "2026-09-22",
+      "accessed_date": "2026-09-22",
+      "geography": "Iowa",
+      "equipment_or_scope": "Published A3-25, NASS Crop Progress, A3-28, A3-33, and A3-42 timing evidence compiled for the dual-use combine research gate",
+      "source_url_or_archive_path": "deliverables/appendix/sources.md",
+      "evidence_class": "author_assumption",
+      "confidence": "author_estimate",
+      "uncertainty_range": "No farm crop windows, hours/day, outage evidence, or contractor commitment; timing remains unknown"
+    }
+  ],
+  "readiness_records": [
+    {
+      "id": "new_own",
+      "status": "indeterminate",
+      "timing_status": "unknown",
+      "source_ids": ["deere_x9_c12f_rd40f_compatibility", "ask_x9_1100_2024_machinefinder", "ask_rd40f_2024_equipment_trader", "a3_29_combine_sp_unit_2026", "a3_29_combine_head_2026"],
+      "timing_source_ids": ["timing_research_gate_2026"],
+      "missing_inputs": ["dated new X9 1100, C12F, and RD40F configuration price or quote", "required feeder/adapter, freight, warranty, tax, and delivered-price basis", "head-specific repair and terminal-resale range"]
+    },
+    {
+      "id": "used_own",
+      "status": "indeterminate",
+      "timing_status": "unknown",
+      "source_ids": ["listing_s780_2020_tractorzoom", "ask_c12r_2020_marketbook", "a3_29_combine_sp_unit_2026", "a3_29_combine_head_2026"],
+      "timing_source_ids": ["timing_research_gate_2026"],
+      "missing_inputs": ["direct exact used RD40F listing and compatibility hardware confirmation", "C12R and RD40F hours/acres, inspection, and repair history", "head-specific repair and terminal-resale range", "bundled transaction or quote if a package price is claimed"]
+    },
+    {
+      "id": "hire_both",
+      "status": "indeterminate",
+      "timing_status": "unknown",
+      "source_ids": ["a3_10_corn_combine_only_2026", "a3_10_soy_combine_only_2026", "a3_10_soy_draper_service_2026"],
+      "timing_source_ids": ["timing_research_gate_2026"],
+      "missing_inputs": ["written local contractor scope and rate", "grain cart, haul, trucking, drying, fuel, and operator treatment", "crop-specific equipment, acres, dates or priority, weather, and cancellation commitment"]
+    }
+  ],
+  "numeric_assumptions": [
+    {"key": "anchor_total_acres", "value": 2400, "unit": "farm_acres", "source_id": "author_workload_definition_2026"},
+    {"key": "corn_share", "value": 0.5, "unit": "fraction", "source_id": "author_workload_definition_2026"},
+    {"key": "soy_share", "value": 0.5, "unit": "fraction", "source_id": "author_workload_definition_2026"},
+    {"key": "corn_harvest_passes", "value": 1, "unit": "passes_per_crop_acre", "source_id": "author_workload_definition_2026"},
+    {"key": "soy_harvest_passes", "value": 1, "unit": "passes_per_crop_acre", "source_id": "author_workload_definition_2026"},
+    {"key": "corn_capacity", "value": 8.909090909090908, "unit": "crop_acres_per_hour", "source_id": "operations_capacity_2026"},
+    {"key": "soy_capacity", "value": 13.575757575757576, "unit": "crop_acres_per_hour", "source_id": "operations_capacity_2026"},
+    {"key": "benchmark_corn_acres", "value": 1200, "unit": "crop_acres", "source_id": "author_workload_definition_2026"},
+    {"key": "benchmark_soy_acres", "value": 1200, "unit": "crop_acres", "source_id": "author_workload_definition_2026"},
+    {"key": "benchmark_corn_hours", "value": 134.693877551, "unit": "machine_hours", "source_id": "operations_capacity_2026"},
+    {"key": "benchmark_soy_hours", "value": 88.3928571429, "unit": "machine_hours", "source_id": "operations_capacity_2026"},
+    {"key": "benchmark_base_combine_hours", "value": 223.0867346939, "unit": "machine_hours", "source_id": "operations_capacity_2026"}
+  ]
+}
